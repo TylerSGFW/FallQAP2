@@ -1,0 +1,7 @@
+services:
+  pain:
+    image: gfwtylers/pain:latest
+    ports:
+      - 80:80
+    environment:
+      - spring.datasource.url=jdbc:mysql://host.docker.internal:3306/pain
